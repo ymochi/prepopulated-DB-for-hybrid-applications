@@ -23,7 +23,23 @@ In the source codes, there are two simple steps.<br>
 <b>1) Check environmemt (virtual or actual device)<br>
  2) dbcopy();</b><br>
 *After copying db file, you can use SQLs in normal way. <br>
-
+```js
+   //Here is an example of how to check virtual or actual device
+    $rootScope.CheckIsVirtual = function () {
+        blnVirtualflg = new Boolean;   //Environmental flag (you can modify this kind of codes)
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady() {
+            if (device.isVirtual === undefined) {
+                blnVirtualflg = true;    //Debug
+                return ;
+            }
+            else {
+                blnVirtualflg = false;   //Actual device
+                return ;
+            }
+        }
+    }
+'''
 #<b>important</b><br>
 Since dbcopy() tries to copy brand-new db-file from your WWW/(folder), you should not create sqlite DB <font color="red"><b>before</b></font> dpcopy(); <br>
 ->If db exists, the following error will appear. <br>

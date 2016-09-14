@@ -8,6 +8,7 @@ You need two plugins.<br><b>
 1) Cordova-sqlite-evcore-extbuild-free<br>
 2) cordova-plugin-dbcopy<br></b>
 ->Apply these two plugins in Visual Studio (please open config.xml and you can easily add these plugins)<br>
+*Currently, "Cordova-sqlite-evcore-extbuild-free" is the only plugin that has no error when packaging files in Phonegap. 
 
 And you need to make prepopulated DB by using "DB Browser for SQLite"<br>
 ->http://sqlitebrowser.org/<br>

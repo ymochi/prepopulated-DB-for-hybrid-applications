@@ -55,5 +55,5 @@
         db2.transaction(function (tr) {
         tr.executeSql("DROP TABLE IF EXISTS MMM", [], function () { /*when succeed*/;}, sqlError);
         });  
-
+ 
 

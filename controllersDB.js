@@ -31,7 +31,7 @@
     function dbcopy() {
     //Database filename to be copied
     //location = 0, will copy the db to default SQLite Database Directory
-        window.plugins.sqlDB.copy("words.db", 0, copysuccess, copyerror);
+        window.plugins.sqlDB.copy("XXX.db", 0, copysuccess, copyerror);
     }
 
 })

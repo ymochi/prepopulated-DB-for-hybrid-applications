@@ -9,7 +9,7 @@
 	//SELECT DATA
         db.transaction(function (tr) {
             tr.executeSql(
-              "SELECT * FROM XXX where rowid = YYY, [],
+              "SELECT * FROM XXX where rowid = YYY", [],
               showItemsOnResultSyncRev,
               $scope.sqlError);
         });

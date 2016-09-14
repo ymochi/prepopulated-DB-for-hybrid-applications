@@ -39,7 +39,7 @@ In the source codes, there are two simple steps.<br>
             }
         }
     }
-'''
+```
 #<b>important</b><br>
 Since dbcopy() tries to copy brand-new db-file from your WWW/(folder), you should not create sqlite DB <font color="red"><b>before</b></font> dpcopy(); <br>
 ->If db exists, the following error will appear. <br>

@@ -29,10 +29,11 @@ Since dbcopy() tries to copy brand-new db-file from your WWW/(folder), you shoul
 ->If db exists, the following error will appear.
 ->e.code = 516 (db exists) <br>
 e.g., <br>
+```js
     $scope.DBopen()  //create db instance<br> 
     db.transaction(function (tr) { <br>
        tr.executeSql("CREATE TABLE IF NOT EXISTS XXX (AAA TEXT NOT NULL, BBB, CCC)", [], function () {  }, sqlError); <br>
        }); <br>
-       
+```       
 
 

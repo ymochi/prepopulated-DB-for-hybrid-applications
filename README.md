@@ -72,7 +72,8 @@ In the source codes, there are two simple steps.<br>
     function dbcopy() {
     //Database filename to be copied
     //location = 0, will copy the db to default SQLite Database Directory
-        window.plugins.sqlDB.copy("words.db", 0, copysuccess, copyerror);
+    //you can change db name.
+        window.plugins.sqlDB.copy("XXX.db", 0, copysuccess, copyerror);
     }
 ```
 

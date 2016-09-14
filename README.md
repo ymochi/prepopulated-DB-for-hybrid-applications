@@ -20,7 +20,7 @@ Since we have to debug our project on Visual Studio (e.g., ripple our projects),
 (WebSQL and SQlite are quite similar, so I strongly recommend use both methods in your hybrid (cross platform application)).<br>
 
 In the source codes, there are two simple steps.<br>
-<b>1) Check environmemt<br>
+<b>1) Check environmemt (virtual or actual device)<br>
  2) dbcopy();</b><br>
 *After copying db file, you can use SQLs in normal way. <br>
 

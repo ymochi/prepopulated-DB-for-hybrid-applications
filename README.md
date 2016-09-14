@@ -24,7 +24,7 @@ In the source codes, there are two simple steps.<br>
 *After copying db file, you can use SQLs in normal way. <br>
 
 <b>important</b><br>
-Since dbcopy() tries to copy brand-new db-file from your WWW/(folder), you should not create DB <font style color = red>before dpcopy(); <br>
+Since dbcopy() tries to copy brand-new db-file from your WWW/(folder), you should not create DB <font color="red">before</font> dpcopy(); <br>
 ->If db exists, the following error will appear.
 ->e.code = 516 (db exists) <br>
 e.g., <br>

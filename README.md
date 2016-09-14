@@ -23,7 +23,7 @@ In the source codes, there are two simple steps.<br>
  2) dbcopy();</b><br>
 *After copying db file, you can use SQLs in normal way. <br>
 
-<b>important<b><br>
+<b>important</b><br>
 Since dbcopy() tries to copy brand-new db-file from your WWW/(folder), you should not create DB before dpcopy(); <br>
 ->If db exists, the following error will appear.
 ->e.code = 516 (db exists) <br>

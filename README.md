@@ -77,6 +77,28 @@ In the source codes, there are two simple steps.<br>
         window.plugins.sqlDB.copy("XXX.db", 0, copysuccess, copyerror);
     }
 ```
+```js
+    $rootScope.DBopen = function () {
+        
+        $rootScope.CheckIsVirtual();  //Check environment
+
+        db = new Object;
+
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady() {
+            if (blnVirtualflg == true) {   //Debug->WebSQL
+                // DB Open
+                db = openDatabase("words.db", "1.0", "words", 1024 * 1024 * 10);  //WebSQL ver
+
+            }
+            else if (blnVirtualflg == false) { //Actual Device->SQLite
+                db = window.sqlitePlugin.openDatabase({ name: "words.db", location: 'default' });   //sqlite ver
+
+            }
+            return 
+        }
+    }
+```
 
 #<b>important</b><br>
 Since dbcopy() tries to copy brand-new db-file from your WWW/(folder), you should not create sqlite DB <font color="red"><b>before</b></font> dpcopy(); <br>

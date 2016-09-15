@@ -1,7 +1,8 @@
 # How to apply Prepopulated database in cross platform (hybrid) applications-- Cordova (and IONIC, Phonegap) with Visual Studio 2015
-When developing a cross platform (Android, IOS) application, we often need to have a relatively large prepopulated database. However, it  is almost impossible to make prepopulated DB in WebSQL (If we insert data in WebSQL, we cannot deploy it).
+When developing a cross platform (Android, IOS) application, we often need to have a relatively large prepopulated database. However, it  is almost impossible to make prepopulated DB in WebSQL (If we insert data in WebSQL on our local machines, we cannot deploy it).
 <p>
-Here is one answer to create prepolulated DB in hybrid application (SQlite ver).
+Here is one answer to create prepolulated DB in hybrid application (SQlite ver). <br>
+(This solution does not use "storage adapter", but uses original SQL functions)
 </p>
 <p>
 You need two plugins.<br><b>

@@ -2,8 +2,6 @@
 
 .run(function ($rootScope) {
 
-    //intNo=0:WebSQL
-    //intNo=1:SQlite    
     $rootScope.DBopen = function () {
         
         $rootScope.CheckIsVirtual();  //Check environment

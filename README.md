@@ -111,5 +111,5 @@ e.g., <br>
        tr.executeSql("CREATE TABLE IF NOT EXISTS XXX (AAA TEXT NOT NULL, BBB, CCC)", [], function () {  }, sqlError); <br>
        }); <br>
 ```       
-
+a
 
